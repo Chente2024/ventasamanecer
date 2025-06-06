@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pingo</title>
+    <link rel="stylesheet" href="decorado.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+<body>
+
+
+<div class="carousel">
+
+    <img src="banner1.png" class="slide active">
+    <img src="banner2.png" class="slide">
+    <img src="banner3.png" class="slide">
+    
+</div>
+<header>
+    <p>ventas amanecer</p>
+    <div class="logo">
+        <img src="logova.png" alt="logo de la empresa">
+        <img class="pngo" src="ventasmenu.png">
+    </div>
+
+   
+  <div class="hamburguesa" id="btn-menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+
+
+        
+  
+  
+  <nav id="menu-nav">
+        
+       
+      
+
+        <a href="https://tupperware.ipapercms.dk/Tupperware/Mexico/catalogo_tupperware/tuppertips/vigente/" target="_blank">Tupper Tips</a>
+         <a href="catalogos.html">Catálogos</a>
+        <a href="https://soytupperware2.web.app/login" target="_blank"> Soy Tupperware 2.0</a>
+        <a href="https://www.facebook.com/TWMatamorosAmanecer/" target="_blank">Facebook</a>
+      
+    
+
+     </nav>
+    
+
+    </header>
+
+
+
+
+ 
+
+
+<div class="fotofondo">
+
+<h1 class="soytupperware">
+  <a href="https://soytupperware2.web.app/login" target="_blank">Soy Tupperware 2.0</a>
+</h1>
+
+
+
+
+
+ <h2 class="introsoytupperware" > Aprende a instalar soy Tupperware y descubre las ventajas de capturar tus pedidos. </h2>
+
+<video autoplay loop playsinline width="360" height="360" controls> 
+<source src="App.mp4" type="video/mp4"></video>
+
+</div>
+
+
+<div class="fotofondo-1">
+
+ 
+   
+<h2 class="contacto">Descubre si te gusta Tupperware</h2>
+
+
+<form id="contactForm">
+  <input type="text" name="nombre" placeholder="Tu nombre" required />
+<input type="tel" name="telefono" placeholder="Celular" required pattern="\d{10}" maxlength="10" title="El número debe tener exactamente 10 dígitos" inputmode="numeric" />
+  <textarea   class="mensaje"        name="mensaje" rows="3" placeholder="¿Qué es lo primero que piensas cuando escuchas 'Tupperware'?"></textarea>
+  <button type="submit">Enviar</button>
+</form>
+
+<div id="response"></div>
+<a id="whatsapp-link" href="https://wa.me/qr/AYR464R3NSNRD1
+" target="_blank">💬 Contactar por WhatsApp</a>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const responseDiv = document.getElementById('response');
+  const whatsappLink = document.getElementById('whatsapp-link');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    responseDiv.textContent = "¡A TI TE ENCANTA TUPPERWARE, ponte en contacto ahora!";
+    
+    const telefono = "5211234567890"; // ← cambia por tu número real
+    whatsappLink.href = `https://wa.me/${telefono}?text=Hola,%20quiero%20más%20información%20sobre%20Tupperware.`;
+    whatsappLink.style.display = 'inline-block';
+    
+    form.reset();
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+  const btnMenu = document.getElementById('btn-menu');
+  const nav = document.getElementById('menu-nav');
+
+  btnMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
+
+</body>
+</html>
+
